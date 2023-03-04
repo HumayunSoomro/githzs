@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1"  id="mytab">
+  <caption>My table</caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Course</th>
+    </tr>
+  </thead>
+  <tbody id="mybody">
+    <tr>
+      <td>25</td>
+      <td>HZS</td>
+      <td id="mytd">Js</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Sdf</td>
+      <td>CSS</td>
+    </tr>
+    <tfoot>
+      <tr>
+        <td>20</td>
+        <td>Orhan</td>
+        <td>Jquery</td>
+      </tr>
+    </tfoot>
+  </tbody>
+  </table>
+  <script>
+    var main=document.getElementById("mytab");
+    var rt= main.rows;
+    console.log(rt[0].cells.length);
+    console.log(rt[0].cells[2]);
+    console.log(rt[1].cells.namedItem('mytd'));
+    rt[2].cells[2].innerHTML="sdk";
+    var mycell1=rt[0].insertCell(3);
+    var mycell2=rt[1].insertCell(3);
+    mycell1.innerHTML='new';
+    mycell2.innerHTML='10k';
+    rt[0].deleteCell(3);
+    console.log(mycell);
+
+
+  </script>
+</body>
+</html>
