@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Mouse Event</h1>
+  Name <input type="text" id="mytext">
+  <script>
+    var text=document.getElementById("mytext");
+    function clr1(e){
+      text.style.backgroundColor='blue';
+    }
+    function clr2(e){
+      text.style.backgroundColor='yellow';
+    }
+    text.addEventListener('mouseover',clr1,false);
+    text.addEventListener('mouseout',clr2,false);
+
+  </script>
+</body>
+</html>
