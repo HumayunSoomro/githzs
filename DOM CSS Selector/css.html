@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 title="HZS">Learning JS</h1>
+  <div>
+ <ul id="myul">
+  <li class="c1">item1</li>
+  <li class="c2">item2</li>
+  <li class="c3">item3</li>
+  <li class="c4">item4</li>
+ </ul>
+  </div>
+  <ul id="myul">
+  <li class="game">item1</li>
+  <li class="game nice">item2</li>
+  <li class="game-sony">item3</li>
+  <li class="sonygame">item4</li>
+ </ul>
+  <p title="p1" class="red">Advanced JS</p>
+  <p title="p2" class="red black">learn Html</p>
+  <p title="p3" id="book">learn css</p>
+  <h3 class="ch3">Lorem ipsum dolor sit amet.</h3>
+  <h4 id="book">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, magni!</h4>
+  <script>
+    // var list=document.querySelectorAll('p');
+    // console.log(list.length);
+
+    // var list=document.querySelectorAll('*');
+    // console.log(list);
+
+    // var list=document.querySelectorAll('.c2');
+    // console.log(list);
+
+    // var list=document.querySelectorAll('p.red');
+    // console.log(list);
+
+    // var list=document.querySelectorAll('h4#book');
+    // console.log(list);
+
+    // var list=document.querySelectorAll('p[title="p2"]');
+    // console.log(list);
+
+    // var list=document.querySelectorAll('[class~="game"]');
+    // var list=document.querySelectorAll('[class|="game"]');
+    // var list=document.querySelectorAll('[class^="game"]');
+    // var list=document.querySelectorAll('[class$="game"]');
+    // var list=document.querySelectorAll('[class*="game"]');
+      //  console.log(list);
+
+    var list=document.querySelectorAll('li:first-child');
+    var list=document.querySelectorAll('li:last-child');
+    var list=document.querySelectorAll('li:nth-last-child(2)');
+    var list=document.querySelectorAll('li:nth-child(2)');
+    var list=document.querySelectorAll(':empty');
+
+
+
+
+    console.log(list);
+
+  </script>
+</body>
+</html>
