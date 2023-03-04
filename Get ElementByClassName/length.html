@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Learning JS</h1>
+  <p class="hzs smr">Advaned JS</p>
+  <div id="show">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magni quasi eligendi. Saepe perspiciatis, quas asperiores qui quo modi error ducimus voluptatem eos nostrum distinctio voluptate provident, quam debitis exercitationem.</p>
+    <h2 class="hzs">Front end </h2>
+    <script>
+      var data=document.getElementsByClassName("hzs");
+      var len=data.length;
+      // document.write(data+"<br>");
+      // document.write(len);
+      // console.log(data);
+     for(i=0;i<len;i++){
+      var result=document.getElementsByClassName("hzs")[i];
+      document.write(result);
+      console.log(result);
+     }
+    </script>
+</body>
+</html>
