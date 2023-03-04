@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+ .class1{
+  background-color: aqua;
+ }
+ .class2{
+  background-color: blueviolet;
+ }
+</style>
+<body>
+  <p id="myid" class="class1 class2" style="color: black;">Learning JS</p>
+  <script>
+    var main=document.getElementById("myid");
+    var hzsclass=main.classList;
+    console.log(hzsclass);
+    console.log(hzsclass.length);
+    console.log(hzsclass.value);
+    console.log(hzsclass.item(1));
+    hzsclass.add("class3");
+    console.log(main);
+    hzsclass.remove("class1");
+    console.log(main);
+    hzsclass.replace("class1","class3");
+    console.log(main);
+      var result= hzsclass.contains("class1");
+      console.log(result);
+
+
+
+
+
+  </script>
+</body>
+</html>
