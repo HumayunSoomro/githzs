@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" name="hform">
+    Username:<input type="text" name="huser"><small id="usmall"></small><br><br>
+    <input type="submit" name="hsubmit" value="Submit">
+  </form>
+  <script>
+     function valiade(){
+    var hzs=/^([^0-9\W]*)$/;
+    if(hzs.test(document.hform.huser.value)){
+      // document.hform.huser.style.backgroundColor="white";
+      document.getElementById("usmall").textContent=" user is valid";
+      document.getElementById("usmall").style.color='green';
+
+    }else{
+      // document.hform.huser.style.backgroundColor="red";
+      document.getElementById("usmall").textContent=" user is invalid";
+      document.getElementById("usmall").style.color='red';
+    }
+     }
+     document.hform.huser.addEventListener('keyup',valiade);
+
+  </script>
+</body>
+</html>
