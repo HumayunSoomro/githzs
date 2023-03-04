@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Window Open</h1>
+  <button type="btn" id="mybtn">Click me</button>
+  <script>
+    //  var newwind= window.open();
+    //  document.write(newwind);
+
+    // function windowopen(){
+    //   window.open();
+    // }
+    // document.getElementById("mybtn").addEventListener('click',windowopen);
+
+    // var newwind=window.open('https://www.turkiyeburslari.gov.tr/scholarshipsprograms',"_blank","width=400,height=600");
+
+    //  var newwind=window.open('',"_blank","width=400,height=600");
+    //  newwind.document.write("HBL PSL 8");
+
+    var newwind=window.open('https://www.turkiyeburslari.gov.tr/scholarshipsprograms',"_blank","width=400,height=600");
+
+    function closew(){
+      newwind.close();
+    }
+    document.getElementById("mybtn").addEventListener('click',closew);
+  </script>
+</body>
+</html>
