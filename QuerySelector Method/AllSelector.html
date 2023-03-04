@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Learning JS</h1>
+  <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi alias eaque quis sit officiis? Eos, facilis dolorem provident unde aut ipsa. Recusandae, minus a! Expedita nam distinctio vitae corporis in.</p>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas odio fuga mollitia laborum sint exercitationem magni nam placeat nesciunt laboriosam. Error quo nisi aliquid ipsa autem pariatur modi reprehenderit repellendus.</p>
+  </div>
+  <h2 id="h-2"></h2>
+  <p id="p-1">advaned js</p>
+  <div id="show">
+     <p>ist parah</p>
+     <p class="hzs">2nd <span class="sdk">2nd</span></p>
+     <h3 class="hzs">advanced</h3>
+  </div>
+  <script>
+    // var result=document.querySelectorAll("h1,.p1,#h-2");
+    // var result=document.querySelectorAll("h2[id]");
+    // document.write(result);
+    // console.log(result);
+
+    // var data=document.getElementById("show");
+    // var result=data.querySelectorAll("span.sdk");
+    // document.write(result);
+    // console.log(result);
+
+    var data=document.querySelectorAll(".hzs");
+    var len=data.length;
+    for(i=0;i<len;i++){
+      var result=document.querySelectorAll(".hzs")[i];
+      document.write(result);
+      console.log(result);
+    }
+  </script>
+</body>
+</html>
