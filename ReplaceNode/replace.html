@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="myul">
+    <li>list1</li>
+    <li>list2</li>
+    <li id="mylist">list3</li>
+    <li>list4</li>
+  </ul>
+   <span id="myspan">Logic</span>
+  <script>
+    var parent=document.getElementById("myul");
+    var h=document.getElementById("mylist");
+    // var node=document.createElement("li");
+    // node.textContent="new list";
+    // var result=parent.replaceChild(node,h);
+    // console.log(result);
+  
+    var pan=document.getElementById("myspan");
+    var result=parent.replaceChild(pan,h);
+    console.log(result);
+
+  </script>
+</body>
+</html>
