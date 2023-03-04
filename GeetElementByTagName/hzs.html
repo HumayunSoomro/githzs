@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Learniing Js</h1>
+  <p id="hzs">JS
+    <span>HELLO there</span>
+    <span>hzs</span>
+  </p>
+  <p id="find">
+    <span>End</span>
+  </p>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores earum asperiores! Magnam sequi, quasi iure numquam laudantium quo quisquam quas ut. Ducimus facere eum numquam qui amet alias. Ab?</p>
+  </div>
+  <script>
+    var getspan=document.getElementById("hzs");
+    var result=getspan.getElementsByTagName("span");
+    var hzs=result.length;
+    document.write(hzs + "<br>");
+    document.write(result+"<br>");
+    console.log(result);
+    var sks=document.getElementsByTagName("p").length;
+    for(i=0;i<sks;i++){
+      var result=document.getElementsByTagName("p")[i];
+      document.write(result);
+      console.log(result);
+    }
+  </script>
+</body>
+</html>
