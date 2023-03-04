@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Spread Operator</h1>
+  <script>
+    // var a=[10,20,30];
+    // var b=[...a,40,50];
+    // console.log(a);
+    // console.log(b);
+
+    // var a=[10,20,30];
+    // var b=[40,50,60];
+    // var c=[...a,...b];
+    // console.log(a);
+    // console.log(b);
+    // console.log(c);
+
+    var a={course:"js",fees:"6",tutor:"hzs"};
+    // var b=a;
+    // var b={...a};
+    // a.course="html";
+    var b={like:"5k"};
+    var c={...a,...b,watch:"100"};
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+
+  </script>
+</body>
+</html>
