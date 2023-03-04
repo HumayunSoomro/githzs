@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Event Methods</h1>
+  <div  id="mydiv" style="width: 200px;height: 200px;background-color: aqua;">
+    <a href="https://www.youtube.com/watch?v=_cN7H2bWKZQ&list=PLbGui_ZYuhihZ-pDxNZuQ7xOQ8IS2z3XI&index=93" id="mylink">Go over</a>
+  </div>
+  <script>
+    function stoplink(e){
+      e.preventDefault();
+    }
+    function div1(e){
+     this.style.backgroundColor='blue';
+    }
+    var divOne=document.getElementById("mydiv");
+    var myLink=document.getElementById("mylink");
+   divOne.addEventListener('click',stoplink,false);
+   myLink.addEventListener('click',div1,false);
+  </script>
+</body>
+</html>
