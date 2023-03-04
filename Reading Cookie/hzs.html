@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Cookies</h1>
+  <form action="" name="hform" method="post">
+    name:<input type="text" name="name"><br><br>
+    email:<input type="email" name="email"><br><br>
+    lang:<input type="text" name="lang"><br><br>
+    <input type="button" value="Set Cookie"name="set"onclick="setcookie()">
+    <input type="button" value="Get Cookie"name="get"onclick="getcookie()">
+  </form>
+  <script>
+    function setcookie(){
+      document.cookie="name=" + document.hform.name.value;
+      document.cookie="email=" + document.hform.email.value;
+      document.cookie="lang=" + document.hform.lang.value;
+        }
+        function getcookie(){
+          var cookieArray=document.cookie.split(";");
+          for( var i=0;i<cookieArray.length;i++){
+            var valueArray=cookieArray[i].split("=");
+            // console.log(valueArray);
+          }
+          if(valueArray[0].trim() =='name'){
+            document.hform.name.value = valueArray[1];
+          }
+          if(valueArray[0].trim() =='email'){
+            document.hform.email.value = valueArray[1];
+          }
+          if(valueArray[0].trim() =='lang'){
+            document.hform.lang.value = valueArray[1];
+          }
+        }
+  </script>
+</body>
+</html>
