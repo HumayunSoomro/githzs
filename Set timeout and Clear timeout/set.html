@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque laboriosam earum impedit, quos eveniet dolorem accusantium eum, repellendus facilis quia optio, repudiandae aperiam ut odit! Exercitationem in accusantium eos esse vel pariatur voluptatum et veritatis amet! Quibusdam, amet? Temporibus, magni dolores. Eum tempora ab quasi! Tempora, velit. Error natus possimus exercitationem. Sapiente cum laudantium, facere, quo ut eum fugiat distinctio tempore odio quos asperiores alias molestias perferendis provident temporibus harum reprehenderit quam praesentium assumenda veritatis, hic rerum ipsam necessitatibus. Et ex voluptates sapiente sequi. Magni laboriosam eligendi doloremque, consectetur, aliquid impedit voluptas nostrum deleniti quae nihil aspernatur illo? Illo?</p>
+  <button type="button" id="btn">Clear</button>
+  <script>
+    // function changecs(){
+    //   document.getElementById("myp").style='Color:red';
+    // }
+    // setTimeout(changecs,2000);
+
+      var hzs=setTimeout(() => {
+       document.getElementById("myp").style='Color:red';
+    }, 5000);
+    function cleart(){
+      clearTimeout(hzs);
+    }
+    document.getElementById("btn").addEventListener('click',cleart);
+  </script>
+</body>
+</html>
