@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="myid" style="color: aqua;">Learning JS</p>
+  <script>
+    var main=document.getElementById("myid");
+    var cs=main.style;
+    console.log(main);
+    cs.cssText="font-size:40px;color:blue;";
+    console.log(main);
+    console.log(cs.length);
+    console.log(cs.item(1));
+    var hzsvalue= cs.getPropertyValue("color");
+    console.log(hzsvalue);
+    cs.removeProperty('color');
+    console.log(main);
+    cs.setProperty('font-size','60px','important');
+    var sdk=cs.getPropertyPriority('color');
+    console.log(sdk);
+  </script>
+</body>
+</html>
