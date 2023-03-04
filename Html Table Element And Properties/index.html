@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1"  id="mytab">
+  <caption>My table</caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Course</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>25</td>
+      <td>HZS</td>
+      <td>Js</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Sdf</td>
+      <td>CSS</td>
+    </tr>
+    <tfoot>
+      <tr>
+        <td>20</td>
+        <td>Orhan</td>
+        <td>Jquery</td>
+      </tr>
+    </tfoot>
+  </tbody>
+  </table>
+  <script>
+    var table=document.getElementById("mytab");
+    // var tcap=table.caption;
+    // // tcap.innerHTML= "Learning JS";
+    // // console.log(tcap);
+
+    // var thed=table.tHead;    
+    // console.log(thed);
+
+    // var tfoot=table.tFoot;
+    // console.log(tfoot);
+
+    var tbody=table.tBodies;
+    console.log(tbody);
+  </script>
+</body>
+</html>
