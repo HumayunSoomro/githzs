@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="ps" class="hzs">Learning js</h1>
+  <p id="id">This is parrah</p>
+  <script>
+    var result=document.getElementById("ps");
+    // document.write(result.attributes[0].nodeName+" = ");
+    // document.write(result.attributes[0].nodeValue+"<br>");
+    //  document.write(result.attributes[1].nodeName+" = ");
+    // document.write(result.attributes[1].nodeValue+"<br>");
+
+    for(i=0;i<result.attributes.length;i++){
+      document.write(result.attributes[i].name+" =");
+      document.write(result.attributes[i].value+"<br>");
+
+    }
+  </script>
+</body>
+</html>
